@@ -12,7 +12,7 @@ from fpdf import FPDF
 
 st.set_page_config(page_title="SafeBite Food Safety Inspector", page_icon="🛡️", layout="centered")
 
-
+st.set_option("client.toolbarMode", "minimal")
 
 st.markdown("""
 <style>
