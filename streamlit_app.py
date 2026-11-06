@@ -12,6 +12,40 @@ from fpdf import FPDF
 
 st.set_page_config(page_title="SafeBite Food Safety Inspector", page_icon="🛡️", layout="centered")
 
+)
+
+st.markdown("""
+<style>
+[data-testid="stToolbar"] {
+    display: none !important;
+}
+
+[data-testid="stStatusWidget"] {
+    display: none !important;
+}
+
+[data-testid="stDecoration"] {
+    display: none !important;
+}
+
+.stDeployButton {
+    display: none !important;
+}
+
+#MainMenu {
+    display: none !important;
+}
+
+footer {
+    display: none !important;
+}
+
+header {
+    display: none !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 FRESHNESS = ["Fit for Consumption (Safe)", "Unfit for Consumption (Spoiled / Risk Detected)"]
 
 # Food verification model using pretrained MobileNetV3
